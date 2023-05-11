@@ -1,0 +1,248 @@
+/* Reset CSS
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  line-height: 1.25;
+}
+
+/* Fonts
+   ========================================================================== */
+@font-face {
+  font-family: 'Beautique';
+  src: url('../fonts/Beautique-Regular.otf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Beautique';
+  src: url('../fonts/Beautique-Bold.otf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Optima';
+  src: url('../fonts/Optima-Regular.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Optima';
+  src: url('../fonts/Optima-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Motherland Signature';
+  src: url('../fonts/Motherland-Regular.ttf');
+  font-weight: 500;
+}
+
+/* Header
+   ========================================================================== */
+#header {
+  background-color: #074636;
+  display: flex;
+  align-items: center;
+  padding: 36px 40px;
+}
+
+.header__logo, .header__info {
+  flex: 1;
+}
+
+.header__link {
+  display: block;
+}
+
+.header__img {
+  width: 314px;
+}
+
+.header__info {
+  color: #ffffff;
+}
+
+.header__info-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.header__info-position {
+  font-size: 24px;
+  font-family: 'Beautique', sans-serif;
+  font-weight: 500;
+  line-height: 1.48;
+  letter-spacing: 0.035em;
+  margin-right: 20px;
+}
+
+.header__info-line {
+  flex: 1;
+  background-color: #C49A6C;
+  height: 1px;
+}
+
+.header__info-name {
+  color: #C49A6C;
+  font-size: 36px;
+  font-family: 'Beautique', sans-serif;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  letter-spacing: 0.035em;
+}
+
+.header__info-part {
+  font-size: 28px;
+  font-family: 'Beautique', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.48;
+  letter-spacing: 0.035em;
+  margin-bottom: 24px;
+}
+
+.header__info-number {
+  font-size: 16px;
+  font-family: 'Optima', sans-serif;
+  font-weight: 500;
+  line-height: 1.29;
+}
+
+/* Main
+   ========================================================================== */
+
+/* Footer
+   ========================================================================== */
+
+/* Schedule Consultation
+   ========================================================================== */
+.schedule-consultation {
+  position: fixed;
+  width: 100%;
+}
+
+.schedule-consultation__button {
+  background-color: aliceblue;
+  border-radius: 20px;
+}
+
+.slick-slide {
+  margin-left: 50px;
+}
+
+/* Form
+   ========================================================================== */
+.form {
+  max-width: 900px;
+  margin: auto;
+}
+
+.form__fieldset {
+  border-style: dotted;
+  padding: 20px;
+}
+
+.form__title {
+  font-size: 30px;
+  font-family: 'Optima', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.form__legend {
+  color: #0F4C3B;
+  font-size: 64px;
+  font-family: 'Beautique', sans-serif;
+  font-weight: 700;
+  padding: 0 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form__number {
+  color: #C49A6C;
+  font-size: 96px;
+  font-style: italic;
+  font-family: 'Beautique', sans-serif;
+  font-weight: 700;
+}
+
+.form__row {
+  border-bottom: 1px solid #000000;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  display: flex;
+}
+
+.form__label {
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.form__input {
+  width: 100%;
+  border: none;
+  outline: 0;
+}
+
+.form__submit {
+  background-color: green;
+  border: 1px solid green;
+  color: darkgoldenrod;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Responsive
+   ========================================================================== */
+@media only screen and (max-width: 767px) {
+  /* Header
+   ========================================================================== */
+  #header {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .header__logo {
+    margin-bottom: 20px;
+  }
+
+  .header__img {
+    width: 200px;
+  }
+
+  .header__info-position {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .header__info-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .header__info-part {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+
+  .header__info-number {
+    font-size: 12px;
+  }
+}

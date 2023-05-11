@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Skin One</title>
+  <link rel="stylesheet" type="text/css" href="js/library/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="js/library/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header here -->
+  <header id="header">
+    <div class="header__logo">
+      <a class="header__link" href="#"><img class="header__img" src="images/logo.png" alt="logo" /></a>
+    </div>
+    <div class="header__info">
+      <div class="header__info-group">
+        <p class="header__info-position">Bác sĩ</p>
+        <p class="header__info-line"></p>
+      </div>
+      <p class="header__info-name">Đặng thị minh châu</p>
+      <p class="header__info-part">Chuyên khoa da liễu</p>
+      <p class="header__info-number">CCHN số: 040280/HCM-CCHN</p>
+    </div>
+  </header>
+
+  <!-- Main here -->
+  <main class="main">
+    <section class="intro-product"></section>
+    <section class="advise-free"></section>
+    <section class="info-doctor"></section>
+    <section class="explain-product"></section>
+    <section class="treatment-route"></section>
+    <section class="medical-clinic"></section>
+    <section class="advise-50"></section>
+  </main>
+
+  <!-- Footer here -->
+  <footer id="footer">
+    <div class="single-item-rtl">
+      <div>your content</div>
+      <div>your content</div>
+      <div>your content</div>
+    </div>
+  </footer>
+
+  <!-- Schedule a consultation here -->
+  <div class="schedule-consultation">
+    <button class="schedule-consultation__button">Đặt lịch tư vấn với bác sĩ châu</button>
+  </div>
+
+  <script type="text/javascript" src="js/library/jquery/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="js/library/jquery/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="js/library/slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.single-item-rtl').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1
+      });
+    });
+  </script>
+</body>
+</html>
